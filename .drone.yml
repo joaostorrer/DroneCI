@@ -9,5 +9,5 @@ steps:
     USERNAME:
       from_secret: docker_username
   commands:
-  - echo hello
-  - echo $USERNAME
+  - echo hello $USERNAME > .env
+  - cat .env
